@@ -1,0 +1,30 @@
+# IDE-specific files
+.idea/
+.vscode/
+
+# Dependency directories
+node_modules/
+dist/
+dist-server/
+.angular/
+
+# Compiled output
+dist/
+tmp/
+
+# Log files
+logs/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Miscellaneous
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de entorno de Angular
+/src/environments/*.js
+/src/environments/*.js.map
+/src/environments/*.ts
+/src/environments/*.ts.map
