@@ -28,3 +28,5 @@ Thumbs.db
 /src/environments/*.js.map
 /src/environments/*.ts
 /src/environments/*.ts.map
+
+*.sh
