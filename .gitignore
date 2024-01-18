@@ -30,3 +30,5 @@ Thumbs.db
 /src/environments/*.ts.map
 
 *.sh
+
+.env
