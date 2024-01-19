@@ -32,7 +32,8 @@
             "prerender": true,
             "ssr": {
               "entry": "server.ts"
-            }
+            },
+            "allowedCommonJsDependencies": ["whatwg-url", "@supabase/node-fetch", "ws"]
           },
           "configurations": {
             "production": {
