@@ -10,8 +10,8 @@ interface ImportMetaEnv {
   readonly NODE_ENV: string;
 
   [key: string]: any;
-  readonly SUPABASE_URL: string = env.SUPABASE_URL;
+  readonly NG_APP_SUPABASE_URL: string;
 
   [key: string]: any;
-  readonly SUPABASE_KEY: string= env.SUPABASE_KEY;
+  readonly NG_APP_SUPABASE_KEY: string;
 }
