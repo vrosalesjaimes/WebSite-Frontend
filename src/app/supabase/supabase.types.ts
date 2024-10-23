@@ -3,9 +3,12 @@
  */
 
 /**
- * Logo type
+ * Navbar item
  */
-export interface Logo{
+export interface NavbarItem {
     id: number;
-    logo: string;
+    name: string;
+    isDisplayed: boolean;
+    url: string;
+    order: number;
 }
