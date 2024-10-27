@@ -1,7 +1,7 @@
 import { inject, Injectable, NgZone } from '@angular/core';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { env } from 'process';
-import { NavbarItem } from './supabase.types';
+import { NavbarItem, Skill } from './supabase.types';
 
 @Injectable({
   providedIn: 'root'
@@ -36,5 +36,15 @@ export class SupabaseService {
     return data;
   }
 
+  async getSkills(): Promise<Skill[]> {
+    const { data, error } = await this.supabase
+      .from('skill')
+      .select('*');
 
+    if (error) {
+      throw error;
+    }
+
+    return data;
+  }
 }

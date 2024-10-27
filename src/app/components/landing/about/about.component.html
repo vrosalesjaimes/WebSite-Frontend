@@ -1,0 +1,41 @@
+<section id="about" class="flex flex-col w-full min-h-full xl:max-h-full items-center justify-center ">
+    <h2 class="text-4xl font-bold text-center pt-10  mb-0 pb-0">About Me</h2>
+    <hr class="w-10 h-1 mx-auto my-4 pt-0  bg-primary-500 border-0 rounded">
+    <p class="sm:text-lg text-white-300 py-5 px-5 text-center">
+        Here you will find more information about me, what I do, and my current skills mostly in terms of programming
+        and technology.
+    </p>
+    <div
+        class="flex flex-col lg:flex-row justify-center h-full w-full p-5 lg:space-x-24 space-y-5 lg:space-y-0 max-w-[90rem]">
+        <div id="about_me" class="min-h-16 lg:h-full w-full lg:max-w-[45rem] flex flex-col items-center justify-center">
+            <h3 class="text-2xl lg:text-3xl font-bold text-center mr-auto py-5 lg:py-10 px-3">
+                Get to know me!
+            </h3>
+            <p class="text-base sm:text-lg p-3 text-white-200">
+                I'm a <b class="text-white-100">Mathematician</b> and <b class="text-white-100">Computer Scientist</b>,
+                and a passionate <b class="text-white-100">software developer</b> focused on web development,
+                optimization, and problem-solving. I enjoy applying heuristics and high-performance computing to drive
+                efficiency and tackle complex challenges in tech.
+            </p>
+            <p class="text-base sm:text-lg p-3 text-white-200">
+                My experience spans research, real-time apps, and web projects using Java, PostgreSQL, Angular, CSS,
+                and HTML. Connect with me on <a href="https://www.linkedin.com/in/rosalesjaimesv/" target="_blank"
+                    rel="noopener noreferrer" class="underline text-primary-500">LinkedIn</a> or check out my work on <a
+                    href="https://github.com/vrosalesjaimes" target="_blank" rel="noopener noreferrer"
+                    class="underline text-primary-500">GitHub</a>.
+            </p>
+            <a href="/contact"
+                class="inline-flex items-center justify-center px-5 py-3 my-10 text-base font-medium text-center text-white bg-primary-500 rounded-lg hover:bg-primary-600 focus:ring-1 focus:bg-primary-600">
+                Contact Me
+            </a>
+        </div>
+        <div id="skills" class="lg:h-full w-full lg:max-w-[45rem] flex  flex-col justify-start ">
+            <h3 class="text-2xl lg:text-3xl font-bold text-center py-5 lg:py-10 mr-auto">
+                My Skills
+            </h3>
+            <div class="flex w-full flex-wrap">
+                <span *ngFor="let skill of skills" class="rounded-lg bg-background-900 p-3 m-2">{{ skill.name }}</span>
+            </div>
+        </div>
+    </div>
+</section>

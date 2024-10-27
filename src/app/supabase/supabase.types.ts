@@ -12,3 +12,8 @@ export interface NavbarItem {
     url: string;
     order: number;
 }
+
+export interface Skill {
+    id: number;
+    name: string;
+}
