@@ -5,6 +5,39 @@
         Here you will find more information about my work experience, the companies I have worked for, and the projects
         I have been involved in.
     </p>
-    <div class="flex flex-col lg:flex-row justify-center h-full w-full p-5 lg:space-x-24 space-y-5 lg:space-y-0 max-w-[90rem]">
+    <div
+        class="flex w-full max-w-[90rem] flex-wrap justify-around">
+        <div *ngFor="let experience of experiences" class="flex justify-center items-center bg-background-950 shadow-2xl my-5 mx-5">
+            <div class="max-w-[24rem] mx-auto">
+                <div
+                    class="relative flex max-w-[24rem] flex-col overflow-hidden rounded-xl bg-white bg-clip-border text-white-50 shadow-md">
+                    <div class="relative m-0 overflow-hidden h-48 text-gray-700 bg-transparent rounded-none shadow-none bg-clip-border">
+                        <img [src]="experience.img" class="w-full h-full object-cover" />
+                    </div>                    
+                    <div class="p-6">
+                        <h4
+                            class="block font-sans text-2xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                            {{ experience.title }}
+                        </h4>
+                        <h5>
+                            <a href="https://www.geofisica.unam.mx/" target="_blank" rel="noopener noreferrer"
+                                class="block font-sans text-xl antialiased font-normal leading-relaxed text-gray-500">
+                                {{ experience.company }}
+                            </a>
+                        </h5>
+                        <p class="block mt-3 font-sans text-xl antialiased font-normal leading-relaxed text-gray-700">
+                            {{ experience.description_card }}
+                        </p>
+                    </div>
+                    <div class="flex items-center justify-between p-6">
+                        <div class="flex items-center -space-x-3">
+                        </div>
+                        <p class="block font-sans text-base antialiased font-normal leading-relaxed text-inherit">
+                            {{ experience.date }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>

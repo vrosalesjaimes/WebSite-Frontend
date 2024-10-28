@@ -17,3 +17,17 @@ export interface Skill {
     id: number;
     name: string;
 }
+
+export interface Work {
+    work:string;
+}
+
+export interface WorkExperience {
+    id:number;
+    title:string;
+    company:string;
+    date:string;
+    description:string;
+    description_card:string;
+    img:string;
+}

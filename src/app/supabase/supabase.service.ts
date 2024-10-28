@@ -1,7 +1,7 @@
 import { inject, Injectable, NgZone } from '@angular/core';
 import { createClient, SupabaseClient } from '@supabase/supabase-js';
 import { env } from 'process';
-import { NavbarItem, Skill } from './supabase.types';
+import { NavbarItem, Skill, WorkExperience } from './supabase.types';
 
 @Injectable({
   providedIn: 'root'
@@ -40,6 +40,19 @@ export class SupabaseService {
     const { data, error } = await this.supabase
       .from('skill')
       .select('*');
+
+    if (error) {
+      throw error;
+    }
+
+    return data;
+  }
+
+  async getWorkExperience(): Promise<WorkExperience[]> {
+    const { data, error } = await this.supabase
+      .from('experience')
+      .select('*')
+      .order('id', { ascending: true });
 
     if (error) {
       throw error;

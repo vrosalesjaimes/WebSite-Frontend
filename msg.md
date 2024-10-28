@@ -1,1 +1,1 @@
-Cambiando la imagen del logo.
+Se ha creado la sección para la experiencia laboral conecta a su respectiva tabla en supabase
