@@ -1,1 +1,1 @@
-Se ha creado la sección para la trayectoria escolar conecta a su respectiva tabla en supabase
+Se ha agregado la propiedad de url para la seccion de experiencia laboral

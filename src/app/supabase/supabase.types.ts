@@ -26,6 +26,7 @@ export interface WorkExperience {
     description:string[];
     description_card:string;
     img:string;
+    url:string;
 }
 
 export interface Education {
