@@ -1,1 +1,1 @@
-Se ha agregado la propiedad de url para la seccion de experiencia laboral
+El contenido del slider principal del landing ha sido actualizado a ingles.
