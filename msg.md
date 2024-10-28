@@ -1,1 +1,1 @@
-Se ha creado la sección para la experiencia laboral conecta a su respectiva tabla en supabase
+Se ha creado la sección para la trayectoria escolar conecta a su respectiva tabla en supabase
