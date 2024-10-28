@@ -1,0 +1,1 @@
+Cambiando la imagen del logo.
