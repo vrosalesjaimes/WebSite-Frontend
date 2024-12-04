@@ -1,1 +1,1 @@
-Conexión de Formulario de contacto con Api de emails.
+Modal de correo enviado y warnings de correo.
