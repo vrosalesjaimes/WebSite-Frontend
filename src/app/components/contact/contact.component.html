@@ -58,16 +58,16 @@
             </div>
 
             <div class=" bg-background-900 p-6 rounded-lg">
-                <form class="space-y-4">
-                    <input type='text' placeholder='Name'
-                        class="w-full rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" />
-                    <input type='email' placeholder='Email'
-                        class="w-full rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" />
-                    <input type='text' placeholder='Subject'
-                        class="w-full rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" />
-                    <textarea placeholder='Message' rows="8"
-                        class="w-full rounded-lg px-4 py-4 text-white text-sm outline-none bg-gray-600"></textarea>
-                    <button type='button'
+                <form class="space-y-4" (ngSubmit)="onSubmit()">
+                    <input type='text' [(ngModel)]="name" name="name" placeholder='Name'
+                        class="w-full rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" required/>
+                    <input type='email' [(ngModel)]="to" name="to" placeholder='Email'
+                        class="w-full  rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" required/>
+                    <input type='text' [(ngModel)]="subject" name="subject" placeholder='Subject'
+                        class="w-full rounded-lg py-4 px-4 text-white text-sm outline-none bg-gray-600" required/>
+                    <textarea [(ngModel)]="body" name="body" placeholder='Message' rows="8"
+                        class="w-full rounded-lg px-4 py-4 text-white text-sm outline-none bg-gray-600" required></textarea>
+                    <button type='submit'
                         class="text-white bg-primary-500 hover:bg-primary-600 tracking-wide rounded-lg text-sm px-4 py-3 flex items-center justify-center w-full !mt-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill='#fff' class="mr-2"
                             viewBox="0 0 548.244 548.244">

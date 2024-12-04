@@ -1,1 +1,1 @@
-El contenido del slider principal del landing ha sido actualizado a ingles.
+Conexión de Formulario de contacto con Api de emails.

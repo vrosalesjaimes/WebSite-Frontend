@@ -14,4 +14,7 @@ interface ImportMetaEnv {
 
   [key: string]: any;
   readonly NG_APP_SUPABASE_KEY: string;
+
+  [key: string]: any;
+  readonly NG_APP_EMAIL_API_URL: string;
 }
